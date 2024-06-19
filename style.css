@@ -12,7 +12,6 @@ body {
 
 h1 {
     color: rgb(213, 8, 87);
-    display: none;
 }
 
 
@@ -21,6 +20,7 @@ nav {
     max-width: 100dvw;
     max-height: 20dvh;
     height: 15dvh;
+    padding-top: 0.5%;
 }
 
 nav ul{
@@ -86,10 +86,46 @@ section.slider {
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 37%;
+    margin-top: 78dvh;
     display: flex;
     justify-content: center;
 }
+@media (min-width: 650px) and (max-width: 750px) {
+    .nav-manual, .nav-auto{
+        margin-top: 68dvh;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .nav-manual, .nav-auto{
+        margin-top: 55dvh;
+    }
+    .nav-manual .manual-btn, .nav-auto div{
+        padding: 3%;
+    }
+    nav li{
+        height: 32px;
+        align-items: center;
+    }
+    
+    .logo{
+        height: 80px;
+        margin-top: -0dvh;
+    }
+    nav {
+        height: 12dvh;
+    }
+    .beneficio {
+        font-size: 12px;
+    }
+    .beneficio-img {
+        max-height: 30px;
+    }
+
+}
+
+
 .slider-img{
     max-width: 100%;
     height: 70vh;
@@ -104,7 +140,7 @@ section.slider {
 
 .nav-manual .manual-btn, .nav-auto div{
     border: 1px solid #ff278f;
-    padding: 1%;
+    padding: 7px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -137,17 +173,59 @@ section.slider {
 }
 
 .beneficios {
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     padding: 1dvh;
     display: flex;
-    justify-content: space-evenly;
-    border: solid 2px #000000;
-}
-.beneficio {
-    color: #000000;
+    justify-content:space-evenly;
+    /*border: solid 1px #000000;*/
+    padding: 6px;
+
 }
 
+.beneficio {
+    color: #000000;
+    display: flex;
+    gap: 10px;
+
+}
 
 b {
     color: #e22d84;
+}
+
+.beneficio-img {
+    height: 40px;
+}
+
+
+
+.categorias{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    max-width: 100%;
+    /*border: solid 1px #000000;*/
+}
+
+/*Faltando uma Melhor Responsividade*/
+.categoria{
+    border-radius: 7%;
+    width: 20%;
+    transition: 0.5s;
+}
+.categoria-img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 7%;
+    transition: 0.5s;
+}
+
+
+.categoria:hover{
+    width: 21%;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+.categoria-img:hover{
+    transition: 0.5s;
 }
