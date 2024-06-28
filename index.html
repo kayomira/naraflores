@@ -5,20 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b3bc5d26b.js" crossorigin="anonymous"></script> <!-- kit de ícones do fontawesome -->
 </head>
 
 <body>
 
-    <nav>
-        <ul>
+    <nav> <!-- a sidebar (barra lateral) está dentro do nav -->
+        
+        <input type="checkbox" id="check"> <!-- Checkbox -->
 
-            <li><a href="#"><img src="./images/menu-aberto.png" alt="Menu" class="menu"></a></img></li>
-            
-            <li class="logo"><a href="#"><img src="./images/nome completo vetor.png" alt="logo" class="logo"></a></li>
+        <div class="botao1 icone"> <!-- Botão1 é o botão menu que abre a sidebar -->
+            <label for="check">
+            <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        
+        
+        <a class="logo"><a href="#"><img src="./images/nome completo vetor.png" alt="logo" class="logo"></a></a>
 
-            <li><a href="#"><img src="./images/carrinho-de-compras-de-design-xadrez.png" alt="carrinho" class="carrinho"></a></img></li>
-    
-        </ul>  
+        <a><a href="#" class="carrinho icone"><i class="fa-solid fa-cart-shopping"></i></a></a>
+        
+        <div class="sidebar_menu">
+        <div class="logomenu">
+            <a href="#">Nara Flores</a>
+            </div>
+
+            <div class="botao2"> <!-- Botão2 é o botão "X" que fecha a sidebar -->
+            <label for="check">
+            <i class="fa-solid fa-xmark"></i>
+            </label>
+            </div>
+
+        <div class="menu"> <!-- menu da sidebar -->
+
+            <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Início</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="#">Entrar</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="#">Cadastrar-se</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-plant-wilt"></i>
+                <a href="#">Arranjos</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gift"></i>
+                <a href="#">Presentes</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="#">Ajuda</a>
+            </li>
+
+            </ul>
+
+        </div>
+
+        </div>
+
     </nav>
 
 
@@ -31,15 +88,15 @@
 
             
             <div class="slide-box primeiro">
-                <a href="#"><img class="img-desktop" src="./images/jeena-paradies-FnqH9E5C2do-unsplash.jpg" alt="Slide 1"></a>
+                <a href="#"><img class="img-desktop" src="./images/slide Presente.jpg" alt="Slide 1"></a>
             </div>
 
             <div class="slide-box">
-                <a href="#"><img class="img-desktop" src="./images/young-woman-covering-eyes-flowers-smiling.jpg" alt="Slide 1"></a>
+                <a href="#"><img class="img-desktop" src="./images/slide Orquidea.jpg" alt="Slide 1"></a>
             </div>
 
             <div class="slide-box">
-                <a href="#"><img class="img-desktop" src="./images/jeena-paradies-FnqH9E5C2do-unsplash.jpg" alt="Slide 1"></a>
+                <a href="https://www.instagram.com/narafloresba"><img class="img-desktop" src="./images/slide Insta.jpg" alt="Slide 1"></a>
             </div>
 
 
@@ -74,16 +131,24 @@
 
     <section class="categorias">
 
-        <a href="#" class="categoria"><img src="./images/perfil insta.jpg" alt="Categoria 1" class="categoria-img"></a>
-        <a href="#" class="categoria"><img src="./images/perfil insta.jpg" alt="Categoria 2" class="categoria-img"></a>
-        <a href="#" class="categoria"><img src="./images/perfil insta.jpg" alt="Categoria 3" class="categoria-img"></a>
-        <a href="#" class="categoria"><img src="./images/perfil insta.jpg" alt="Categoria 4" class="categoria-img"></a>
+        <a href="#" class="categoria"><img src="./images/Arranjos grandes.jpg" alt="Categoria Arranjos Grandes" class="categoria-img"></a>
+        <a href="#" class="categoria"><img src="./images/Decorações.jpg" alt="Categoria Decorações" class="categoria-img"></a>
+        <a href="#" class="categoria"><img src="./images/Pendente.jpg" alt="Categoria Pendentes" class="categoria-img"></a>
+        <a href="#" class="categoria"><img src="./images/Presentes.jpg" alt="Categoria Presentes" class="categoria-img"></a>
 
     </section>
 
     <section>
-        
+        <a href="https://www.wa.me/75982035125" class="contatowpp"><img src="./images/Naoachou.webp" class="contatowpp-img" alt="Não achou oque procurava? Venha para o whatsapp"></a>
     </section>
+
+    <footer class="footer">
+
+        <a class="logof"><img src="./images/nome completo vetor.png" class="logof" alt="Logo"></a>
+        <a href="/termos.html" class="burocracia">Termos e Condições</a>
+        <a href="/politica.html" class="burocracia">Política de Privacidade</a>
+
+    </footer>
 
     <script src="script.js"> </script>
 

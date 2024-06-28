@@ -10,42 +10,134 @@ body {
     min-height: 100vh;
 }
 
-h1 {
-    color: rgb(213, 8, 87);
-}
-
-
 nav {
     background-color: #ffdfef;
     max-width: 100dvw;
     max-height: 20dvh;
     height: 15dvh;
     padding-top: 0.5%;
-}
-
-nav ul{
-    width: 100%;
-    list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-nav li{
-    height: 40px;
+nav li {
+    height: 45px;
     align-items: center;
+    list-style: none;
 }
 
-.logo{
+.logo {
     height: 100px;
     margin-top: -0dvh;
 }
 
-nav a{
-    height: 100%;
-    padding: 0 30px;
-    display: flex;
+.carrinho {
+    font-size: 35px;
+    font-weight: 700;
+    color: #000000;
+    transition: all .3s linear;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 40px;
+}
+
+/* Sidebar */
+
+
+.sidebar_menu {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 280px;
+  left: -280px;
+  background: #DF376A;
+  box-shadow: 0px 0px 6px #ffffff80;
+  transition: all 0.3s linear;
+  z-index: 20;
+}
+
+.sidebar_menu .logomenu {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 2px 4px #ffffff80;
+}
+
+.sidebar_menu .logomenu a {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  left: 50px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+.sidebar_menu .menu {
+  position: absolute;
+  top: 80px;
+  width:100%;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+
+.sidebar_menu .menu i {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 8px;
+}
+
+.sidebar_menu .menu a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.sidebar_menu .menu li:hover {
+  border-left: 1px solid #ffffff;
+  box-shadow: 0 0 4px #ffffff80;
+}
+
+#check {
+  display: none;
+}
+
+.botao1 i {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 19;
+  padding-left: 40px;
+  transition: all 0.3s linear;
+}
+
+.sidebar_menu .botao2 i {
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  color: #ffffff;
+  left: 240px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .3s linear;
+}
+
+#check:checked ~ .sidebar_menu { /* Quando a checkbox for marcada, a sidebar vai aparecer */
+  left: 0;
+}
+
+#check:checked ~ .botao1 i { /* Quando a checkbox for marcada, o botão de menu vai sumir */
+  opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .botao2 i { /* E o botão de "X" vai aparecer */
+  opacity: 1;
 }
 
 
@@ -90,6 +182,8 @@ section.slider {
     display: flex;
     justify-content: center;
 }
+
+
 @media (min-width: 650px) and (max-width: 750px) {
     .nav-manual, .nav-auto{
         margin-top: 68dvh;
@@ -99,7 +193,7 @@ section.slider {
 
 @media (max-width: 650px) {
     .nav-manual, .nav-auto{
-        margin-top: 55dvh;
+        margin-top: 52dvh;
     }
     .nav-manual .manual-btn, .nav-auto div{
         padding: 3%;
@@ -116,12 +210,21 @@ section.slider {
     nav {
         height: 12dvh;
     }
+
+    .beneficios {
+        display: none;
+    }
+
     .beneficio {
         font-size: 12px;
+        display: none;
     }
+    
     .beneficio-img {
         max-height: 30px;
+        display: none;
     }
+
 
 }
 
@@ -177,7 +280,6 @@ section.slider {
     padding: 1dvh;
     display: flex;
     justify-content:space-evenly;
-    /*border: solid 1px #000000;*/
     padding: 6px;
 
 }
@@ -202,9 +304,9 @@ b {
 .categorias{
     display: flex;
     justify-content: space-evenly;
-    padding: 2%;
+    padding: 4%;
     max-width: 100%;
-    /*border: solid 1px #000000;*/
+    margin-top: -2%;
 }
 
 /*Faltando uma Melhor Responsividade*/
@@ -228,4 +330,32 @@ b {
 }
 .categoria-img:hover{
     transition: 0.5s;
+}
+
+.contatowpp {
+    background-color: #ffdfef;
+
+}
+.contatowpp-img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+
+}
+
+.footer {
+    background-color: #ededed;
+    height: 10dvh;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logof {
+    max-height: 15dvh;
+    max-width: 30dvw;
+}
+
+.burocracia {
+    color: #000000;
 }
