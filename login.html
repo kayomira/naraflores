@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b3bc5d26b.js" crossorigin="anonymous"></script> <!-- kit de ícones do fontawesome -->
+</head>
+
+<body>
+
+    <nav> <!-- a sidebar (barra lateral) está dentro do nav -->
+        
+        <input type="checkbox" id="check"> <!-- Checkbox -->
+
+        <div class="botao1 icone"> <!-- Botão1 é o botão menu que abre a sidebar -->
+            <label for="check">
+            <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        
+        
+        <a class="logo"><a href="./index.html"><img src="./images/nome completo vetor.png" alt="logo" class="logo"></a></a>
+
+        <a><a href="./carrinho.html" class="carrinho icone"><i class="fa-solid fa-cart-shopping"></i></a></a>
+        
+        <div class="sidebar_menu">
+        <div class="logomenu">
+            <a href="./index.html">Nara Flores</a>
+            </div>
+
+            <div class="botao2"> <!-- Botão2 é o botão "X" que fecha a sidebar -->
+            <label for="check">
+            <i class="fa-solid fa-xmark"></i>
+            </label>
+            </div>
+
+        <div class="menu"> <!-- menu da sidebar -->
+
+            <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="./index.html">Início</a>
+            </li>
+
+            <li class="menu-items active">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="./login.html">Entrar</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="./cadastro.html">Cadastrar-se</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-plant-wilt"></i>
+                <a href="./produtos.html">Arranjos</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gift"></i>
+                <a href="./presentes.html">Presentes</a>
+            </li>
+
+            <li id="Ajuda">
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="./ajuda.html">Ajuda</a>
+            </li>
+
+            </ul>
+
+        </div>
+
+        </div>
+
+    </nav>
+
+
+    <section>
+        <div class="loginfield">
+            
+            <form action="loginconfig.php" method="POST">
+                <fieldset>
+                    <legend>Login</legend>
+
+                <br>
+
+                <div class="inputbox">  
+                    <label for="email" id="emailbl" class="labelInput">Email</label>
+                    <input type="text" name="email" id="email" placeholder="E-mail" class="inputUser" required>
+                </div>
+
+                <br><br>
+
+                <div class="inputbox">
+                    <label for="senha" class="labelInput">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" class="inputUser" required>
+                </div>
+
+                    <br><br>
+
+                    <input type="submit" name="submit" id="submit">
+
+                    <br>
+
+                    <a href="cadastro.php">ou Cadastre-se</a>
+                </fieldset>
+            </form>
+
+        </div>
+    </section>
+</body>

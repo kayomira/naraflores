@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b3bc5d26b.js" crossorigin="anonymous"></script> <!-- kit de ícones do fontawesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav> <!-- a sidebar (barra lateral) está dentro do nav -->
+        
+        <input type="checkbox" id="check"> <!-- Checkbox -->
+
+        <div class="botao1 icone"> <!-- Botão1 é o botão menu que abre a sidebar -->
+            <label for="check">
+            <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        
+        
+        <a class="logo"><a href="./index.html"><img src="./images/nome completo vetor.png" alt="logo" class="logo"></a></a>
+
+        <a><a href="./carrinho.html" class="carrinho icone"><i class="fa-solid fa-cart-shopping"></i></a></a>
+        
+        <div class="sidebar_menu">
+        <div class="logomenu">
+            <a href="./index.html">Nara Flores</a>
+            </div>
+
+            <div class="botao2"> <!-- Botão2 é o botão "X" que fecha a sidebar -->
+            <label for="check">
+            <i class="fa-solid fa-xmark"></i>
+            </label>
+            </div>
+
+        <div class="menu"> <!-- menu da sidebar -->
+
+            <ul>
+
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="./index.html">Início</a>
+            </li>
+
+            <li class="menu-items">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="./login.html">Entrar</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="./cadastro.html">Cadastrar-se</a>
+            </li>
+
+            <li class="active">
+                <i class="fa-solid fa-plant-wilt"></i>
+                <a href="./produtos.html">Arranjos</a>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gift"></i>
+                <a href="./presentes.html">Presentes</a>
+            </li>
+
+            <li id="Ajuda">
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="./ajuda.html">Ajuda</a>
+            </li>
+
+            </ul>
+
+        </div>
+
+        </div>
+
+    </nav>
+    
+    <div class="container1">
+
+    <div id="Produtos">
+        <h2>Arranjos e Decorações</h2>
+        <div>
+            <a href="./produtos.html" class="button-filter active">Todos</a>
+            <a href="./decorações.html" class="button-filter">Decorações</a>
+            <a href="./arranjosgrandes.html" class="button-filter">Arranjos grandes</a>
+            <a href="./pendentes.html" class="button-filter">Pendentes</a>
+        </div>
+    </div>
+    
+
+   
+       
+            <div class="coluna1">
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Mini Orquidea.jpeg">
+                    <h4>Arranjo Mini Orquidea</h4>
+                    <p>$25,00</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Buchinho.jpeg">
+                    <h4>Arranjo Buchinho</h4>
+                    <p>$35,00</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Pendente Jibóia.jpeg">
+                    <h4>Pendente Jibóia</h4>
+                    <p>$79,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Pendente.jpeg">
+                    <h4>Pendente Oriental</h4>
+                    <p>$69,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Vaso Graminha.jpeg">
+                    <h4>Vaso graminha artificial</h4>
+                    <p>$24,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Cerejeira Grande.jpeg">
+                    <h4>Arranjo de Cerejeira Grande</h4>
+                    <p>$269,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Orquidea Grande.jpeg">
+                    <h4>Arranjo de Orquídea Grande</h4>
+                    <p>$249,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Mini Girassóis.jpeg">
+                    <h4>Arranjo Girassóis</h4>
+                    <p>$64,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Pendente 2.jpeg">
+                    <h4>Pendente Videira</h4>
+                    <p>$69,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Frutinha.jpeg">
+                    <h4>Arranjo Frutinha</h4>
+                    <p>$34,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Orquidea amarela.jpeg">
+                    <h4>Arranjo de vidro Orquídea Amarela</h4>
+                    <p>$69,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Cacto.jpeg">
+                    <h4>Mini Cacto</h4>
+                    <p>$24,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Samambaia.jpeg">
+                    <h4>Arranjo Samambaia</h4>
+                    <p>$44,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Dalla.jpeg">
+                    <h4>Arranjo Dalla</h4>
+                    <p>$34,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span class="disabled">2</span>
+            <span class="disabled">3</span>
+            <span class="disabled">&#8594;</span>
+        </div>
+
+        <section>
+            <a href="https://www.wa.me/75982035125" class="contatowpp"><img src="./images/Naoachou.webp" class="contatowpp-img" alt="Não achou oque procurava? Venha para o whatsapp"></a>
+        </section>
+    
+        <footer class="footer">
+    
+            <a class="logof"><img src="./images/nome completo vetor.png" class="logof" alt="Logo"></a>
+            <a href="/termos.html" class="burocracia">Termos e Condições</a>
+            <a href="/politica.html" class="burocracia">Política de Privacidade</a>
+    
+        </footer>
+    
+        <script src="script.js"> </script>
+</body>
+</html>

@@ -21,13 +21,13 @@
         </div>
         
         
-        <a class="logo"><a href="#"><img src="./images/nome completo vetor.png" alt="logo" class="logo"></a></a>
+        <a class="logo"><a href="./index.html"><img src="./images/nome completo vetor.png" alt="logo" class="logo"></a></a>
 
-        <a><a href="#" class="carrinho icone"><i class="fa-solid fa-cart-shopping"></i></a></a>
+        <a><a href="./carrinho.html" class="carrinho icone"><i class="fa-solid fa-cart-shopping"></i></a></a>
         
         <div class="sidebar_menu">
         <div class="logomenu">
-            <a href="#">Nara Flores</a>
+            <a href="./index.html">Nara Flores</a>
             </div>
 
             <div class="botao2"> <!-- Botão2 é o botão "X" que fecha a sidebar -->
@@ -40,34 +40,34 @@
 
             <ul>
 
-            <li>
+            <li class="active">
                 <i class="fa-solid fa-house"></i>
-                <a href="#">Início</a>
+                <a href="./index.html">Início</a>
+            </li>
+
+            <li class="menu-items">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="./login.html">Entrar</a>
             </li>
 
             <li>
                 <i class="fa-solid fa-right-to-bracket"></i>
-                <a href="#">Entrar</a>
-            </li>
-
-            <li>
-                <i class="fa-solid fa-right-to-bracket"></i>
-                <a href="#">Cadastrar-se</a>
+                <a href="./cadastro.html">Cadastrar-se</a>
             </li>
 
             <li>
                 <i class="fa-solid fa-plant-wilt"></i>
-                <a href="#">Arranjos</a>
+                <a href="./produtos.html">Arranjos</a>
             </li>
 
             <li>
                 <i class="fa-solid fa-gift"></i>
-                <a href="#">Presentes</a>
+                <a href="./presentes.html">Presentes</a>
             </li>
 
-            <li>
+            <li id="Ajuda">
                 <i class="fa-solid fa-circle-question"></i>
-                <a href="#">Ajuda</a>
+                <a href="./ajuda.html">Ajuda</a>
             </li>
 
             </ul>
@@ -88,11 +88,11 @@
 
             
             <div class="slide-box primeiro">
-                <a href="#"><img class="img-desktop" src="./images/slide Presente.jpg" alt="Slide 1"></a>
+                <a href="./presentes.html"><img class="img-desktop" src="./images/slide Presente.jpg" alt="Slide 1"></a>
             </div>
 
             <div class="slide-box">
-                <a href="#"><img class="img-desktop" src="./images/slide Orquidea.jpg" alt="Slide 1"></a>
+                <a href="./arranjosgrandes.html"><img class="img-desktop" src="./images/slide Orquidea.jpg" alt="Slide 1"></a>
             </div>
 
             <div class="slide-box">
@@ -131,11 +131,44 @@
 
     <section class="categorias">
 
-        <a href="#" class="categoria"><img src="./images/Arranjos grandes.jpg" alt="Categoria Arranjos Grandes" class="categoria-img"></a>
-        <a href="#" class="categoria"><img src="./images/Decorações.jpg" alt="Categoria Decorações" class="categoria-img"></a>
-        <a href="#" class="categoria"><img src="./images/Pendente.jpg" alt="Categoria Pendentes" class="categoria-img"></a>
-        <a href="#" class="categoria"><img src="./images/Presentes.jpg" alt="Categoria Presentes" class="categoria-img"></a>
+        <a href="./arranjosgrandes.html" class="categoria"><img src="./images/Arranjos grandes.jpg" alt="Categoria Arranjos Grandes" class="categoria-img"></a>
+        <a href="./decorações.html" class="categoria"><img src="./images/Decorações.jpg" alt="Categoria Decorações" class="categoria-img"></a>
+        <a href="./pendentes.html" class="categoria"><img src="./images/Pendente.jpg" alt="Categoria Pendentes" class="categoria-img"></a>
+        <a href="./presentes.html" class="categoria"><img src="./images/Presentes.jpg" alt="Categoria Presentes" class="categoria-img"></a>
 
+    </section>
+
+    <section class="featured">
+        <div class="container1">
+            <h2 class="titulo">Mais pedidos</h2>
+            <div class="coluna1">
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Mini Orquidea.jpeg">
+                    <h4>Arranjo Mini Orquídea</h4>
+                    <p>$35,00</p>
+                    <button onclick="addchart()" id="flor-1" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Buchinho.jpeg">
+                    <h4>Arranjo Buchinho</h4>
+                    <p>$35,00</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Cerejeira média.jpeg">
+                    <h4>Arranjo Cerejeira Média</h4>
+                    <p>$179,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+                <div class="itensmaispedidos">
+                    <img class="flor" src="./images/Mini Girassóis.jpeg">
+                    <h4>Arranjo Mini Girassóis</h4>
+                    <p>$64,99</p>
+                    <button onclick="addchart()" class="addcarrinho">Adicionar ao carrinho</button>
+                </div>
+            </div>
+            <a href="./produtos.html" class="mais">Ver mais</a>
+        </div>
     </section>
 
     <section>

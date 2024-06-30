@@ -57,6 +57,7 @@ nav li {
   z-index: 20;
 }
 
+
 .sidebar_menu .logomenu {
   position: absolute;
   width: 100%;
@@ -84,6 +85,13 @@ nav li {
   margin-top: 6px;
   padding: 14px 20px;
 }
+
+.sidebar_menu .menu li.active {
+  
+    background: #ffffff80;
+    box-shadow: 0px 0px 6px #DF376A;
+  
+  }
 
 .sidebar_menu .menu i {
   color: #fff;
@@ -182,12 +190,33 @@ section.slider {
     display: flex;
     justify-content: center;
 }
-
-
+@media (min-width: 750px) and (max-width: 1000px) {
+    .button-filter {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+        margin: 5px;
+        text-align: center;
+    }
+    #Produtos {
+        margin: 10px;
+    }
+}
 @media (min-width: 650px) and (max-width: 750px) {
     .nav-manual, .nav-auto{
         margin-top: 68dvh;
     }
+    .button-filter {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+        margin: 5px;
+        text-align: center;
+    }
+    #Produtos {
+        margin: 10px;
+    }
+
 }
 
 
@@ -225,6 +254,28 @@ section.slider {
         display: none;
     }
 
+    .preencha, .preencha1, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+
+
+      .flor {
+        margin-top: 30px;
+        max-width: 250px;
+        transition: 0.5s;
+    }
+
+    .button-filter {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+        margin: 5px;
+        text-align: center;
+    }
+    #Produtos {
+        margin: 10px;
+    }
 
 }
 
@@ -304,9 +355,11 @@ b {
 .categorias{
     display: flex;
     justify-content: space-evenly;
+    overflow-block: 50%;
     padding: 4%;
     max-width: 100%;
     margin-top: -2%;
+    
 }
 
 /*Faltando uma Melhor Responsividade*/
@@ -315,6 +368,7 @@ b {
     width: 20%;
     transition: 0.5s;
 }
+
 .categoria-img{
     max-height: 100%;
     max-width: 100%;
@@ -342,6 +396,133 @@ b {
     width: auto;
 
 }
+/*Mais pedidos*/
+
+.coluna1 {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-wrap: wrap;
+    font-size: 20px;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+
+#Produtos {
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin: 100px;
+}
+
+.button-filter{
+    border: none;
+    padding: 15px;
+    background-color: #ffbadc;
+    font-size: 15px;
+    border-radius: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+.button-filter:hover{
+    background-color: #f8457b;
+    color: #f7f7f7;
+    transition: 0.5s;
+}
+
+.button-filter.active{
+    background-color: #f8457b;
+    color: #f7f7f7;
+}
+
+.disabled {
+    cursor:default;
+    opacity: 0.4;
+}
+
+.container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.featured {
+    padding-bottom: 100px;
+}
+
+.flor {
+    max-width: 250px;
+    transition: 0.5s;
+}
+
+.mais {
+    display: flex;
+    justify-content: center;
+    color: #f8457b;
+}
+
+.addcarrinho {
+    background-color: #f8457b;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.addcarrinho:disabled {
+    background-color: #cacaca;
+    color: #858585;
+    opacity: 0.7;
+}
+
+.addcarrinho:hover {
+    background-color: #ff6795;
+    color: #fff;
+}
+
+.itensmaispedidos {
+   transition: transform 0,5s;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.itensmaispedidos img {
+    width: 100%;
+}
+
+.itensmaispedidos:hover {
+    transform: translatey(-5px);
+}
+
+
+
+.titulo {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+
+.titulo::after {
+    content: '';
+    background: #e22d84;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .footer {
     background-color: #ededed;
@@ -358,4 +539,131 @@ b {
 
 .burocracia {
     color: #000000;
+}
+
+/*Form de produtos*/
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  input[type=number], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .preencha {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+  .preencha1 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  .coluna:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*Pagina de todos os produtos*/
+
+.selecione {
+    max-width: 25%;
+    border: 70px;
+    border-color: #181616 solid;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.selecione:focus {
+    outline: none;
+}
+
+.coluna2 {
+    margin: 100px;
+}
+
+.page-btn {
+    margin: 20px auto 80px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.page-btn span {
+    display:inline-block ;
+    border: 1px solid #000000;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+   border-color: #e22d84 ;
+}
+
+/*LOGIN E CADASTRO*/
+
+.imglogin {
+    max-width: 100dvw;
+    max-height: 30dvh;
+    height: auto;
+    width: 100dvw;
+    overflow: hidden;
+}
+
+.up {
+    margin-top: -15dvh;
+}
+
+.loginfield {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    text-align: center;
+}
+.labelInput {
+    display: none;
+}
+
+.inputbox {
+    border-radius: 10px;
+    padding: 20px;
 }
