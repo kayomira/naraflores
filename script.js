@@ -71,3 +71,63 @@ function addchart() {
     }  
     return false;  
 }  
+
+// CONTADOR
+
+function vapo() {
+    const value = document.getElementById('value');
+    const plusB = document.getElementById('plus');
+    const lessB = document.getElementById('less');
+    const valorunitario = document.getElementById('precounitario');
+
+    let unitario = parseFloat(valorunitario.innerHTML);
+
+    const change = document.querySelector('.change');
+    let valorChange = parseFloat(change.innerHTML);
+
+    let valor = parseInt(value.innerHTML, 10);
+
+    const quantity = document.getElementById('quantity');
+    const subtotal = document.getElementById('subtotal');
+    const total = document.getElementById('total');
+
+    let soma = valorChange;
+    let currentSubtotal = unitario * valor;
+    let currentTotal = currentSubtotal + parseFloat(total.innerHTML.replace('R$', ''));
+
+    plusB.addEventListener('mousedown', () => {
+        valor += 1;
+        value.innerHTML = valor;
+
+        soma += unitario;
+        change.innerHTML = soma.toFixed(2);
+
+        currentSubtotal = unitario * valor;
+        subtotal.innerHTML = `R$${currentSubtotal.toFixed(2)}`;
+        currentTotal = currentSubtotal; 
+        total.innerHTML = currentTotal.toFixed(2);
+
+        quantity.innerHTML = `${valor}x`;
+
+        console.log(unitario);
+    });
+
+    lessB.addEventListener('mousedown', () => {
+        if (valor > 0) {
+            valor -= 1;
+            value.innerHTML = valor;
+
+            soma -= unitario;
+            change.innerHTML = soma.toFixed(2);
+
+            currentSubtotal = unitario * valor;
+            subtotal.innerHTML = `R$${currentSubtotal.toFixed(2)}`;
+            currentTotal = currentSubtotal; 
+            total.innerHTML = currentTotal.toFixed(2);
+
+            quantity.innerHTML = `${valor}x`;
+
+            console.log('preço' + unitario);
+        }
+    });
+}

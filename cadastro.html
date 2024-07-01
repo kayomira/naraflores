@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastre-se | Nara Flores</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8b3bc5d26b.js" crossorigin="anonymous"></script> <!-- kit de ícones do fontawesome -->
 </head>
@@ -67,7 +67,7 @@
 
             <li id="Ajuda">
                 <i class="fa-solid fa-circle-question"></i>
-                <a href="./ajuda.html">Ajuda</a>
+                <a href="./Manual de usuário.pdf">Ajuda</a>
             </li>
 
             </ul>
@@ -77,42 +77,39 @@
         </div>
 
     </nav>
+    
     <section>
+        <h2 class="tituloCadastro">Cadastro</h2>
         <div class="loginfield">
-            <form action="cadastro.php" method="POST">
-                <fieldset>
-                    <legend>Cadastro</legend>
 
-                        <br>
+            <form action="cadastro.php" method="POST">
+
+                <fieldset>
 
                     <div class="inputbox">
-                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <input type="email" name="email" placeholder="E-mail" id="email" class="inputUser" required>
                         <label for="email" class="labelInput">Email</label>
                     </div>
 
-                        <br><br>
-
                     <div class="inputbox">
-                        <input type="password" name="senha" id="senha" class="inputUser" required>
+                        <input type="password" name="senha" placeholder="Senha" id="senha" class="inputUser" required>
                         <label for="senha" class="labelInput">Senha</label>
                     </div>
 
-                        <br><br>
-
                     <div class="inputbox">  
-                        <input type="password" name="confirmarsenha" id="confirmarsenha" class="inputUser" required>
+                        <input type="password" name="confirmarsenha" placeholder="Confirmar senha" id="confirmarsenha" class="inputUser" required>
                         <label for="confirmarsenha" class="labelInput">Confirmar senha</label>
                     </div>
+                    
+                    <input type="submit" name="submit" value="Registrar-se" id="submit" onclick="return validarSenha()">
 
-                        <br><br>
-                    <input type="submit" name="submit" id="submit" onclick="return validarSenha()">
-
-                        <br>
-                    <a href="login.php">ou Entrar</a>    
+                    <div class="ouLogin"><a href="login.php">ou Entrar</a></div>
 
                 </fieldset>
             </form>
-        </div> 
+        </div>
+        <img src="./images/florLoginVertical.png" class="floresLogin">
+        <img src="./images/florLoginVertical.png" class="floresLogin2">
 
     </section>
 
