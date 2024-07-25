@@ -229,7 +229,7 @@ section.slider {
 
 @media (max-width: 650px) {
     .nav-manual, .nav-auto{
-        margin-top: 50dvh;
+        margin-top: 45dvh;
     }
     .nav-manual .manual-btn, .nav-auto div{
         padding: 3%;
