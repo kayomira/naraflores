@@ -105,7 +105,7 @@ function vapo() {
         currentSubtotal = unitario * valor;
         subtotal.innerHTML = `R$${currentSubtotal.toFixed(2)}`;
         currentTotal = currentSubtotal; 
-        total.innerHTML = currentTotal.toFixed(2);
+        total.innerHTML = `R$${currentTotal.toFixed(2)}`;
 
         quantity.innerHTML = `${valor}x`;
 
@@ -123,7 +123,7 @@ function vapo() {
             currentSubtotal = unitario * valor;
             subtotal.innerHTML = `R$${currentSubtotal.toFixed(2)}`;
             currentTotal = currentSubtotal; 
-            total.innerHTML = currentTotal.toFixed(2);
+            total.innerHTML = `R$${currentTotal.toFixed(2)}`;
 
             quantity.innerHTML = `${valor}x`;
 

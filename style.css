@@ -218,12 +218,18 @@ section.slider {
     #Produtos {
         margin: 10px;
     }
+    .categorias{
+        display: none;
+    }
+    .categoria{
+        display: none;
+    }
 }
 
 
 @media (max-width: 650px) {
     .nav-manual, .nav-auto{
-        margin-top: 52dvh;
+        margin-top: 50dvh;
     }
     .nav-manual .manual-btn, .nav-auto div{
         padding: 3%;
@@ -285,6 +291,19 @@ section.slider {
 
     #Produtos {
         margin: 10px;
+    }
+
+    .carrinho-produto{
+        display: block;
+    }
+    .carrinho-valores{
+        display: block;
+    }
+    .categorias{
+        display: none;
+    }
+    .categoria{
+        display: none;
     }
 }
 
@@ -351,9 +370,10 @@ section.slider {
 
 }
 
-b {
+.b {
     color: #e22d84;
 }
+
 
 .beneficio-img {
     height: 40px;
@@ -364,17 +384,28 @@ b {
 .categorias{
     display: flex;
     justify-content: space-evenly;
-    overflow-block: 50%;
     padding: 4%;
     max-width: 100%;
     margin-top: -2%;
-    
+}
+.categoriasmob{
+    display: none;
+    justify-content: space-evenly;
+    padding: 4%;
+    max-width: 100%;
+    margin-top: -2%;
 }
 
 /*Faltando uma Melhor Responsividade*/
 .categoria{
     border-radius: 7%;
     width: 20%;
+    transition: 0.5s;
+}
+
+.categoriamob{
+    border-radius: 7%;
+    width: 40%;
     transition: 0.5s;
 }
 
@@ -502,7 +533,7 @@ b {
 }
 
 .itensmaispedidos {
-   transition: transform 0,5s;
+   transition:  0.5s;
    text-align: center;
    margin-top: 20px;
 }
@@ -536,12 +567,20 @@ b {
 }
 
 .footer {
-    background-color: #ededed;
-    height: 10dvh;
+    margin-top: -0.5%;
+    background-color: #fff0fa;
+    height: 20dvh;
     padding: 1%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.contato {
+    list-style: none;
+}
+.institucional {
+    list-style: none;
 }
 
 .logof {
@@ -551,20 +590,6 @@ b {
     padding-top: 10px;
 }
 
-.burocracia {
-    font-size: 1.3rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.burocracia ul li {
-    padding: 10px;
-}
-
-.burocracia ul li a {
-    color: #000000;
-    text-decoration: none;
-}
 
 /*Form de produtos*/
 
@@ -782,6 +807,12 @@ fieldset {
     .tituloCadastro {
         margin-bottom: 4vh;
     }
+    .categorias{
+        display: flex;
+    }
+    .categoria{
+        display: flex;
+    }
 }
 
 @media (max-width: 650px) {
@@ -803,6 +834,18 @@ fieldset {
 
     .floresLogin2 {
         right: -180px;
+    }
+    .categoriasmob{
+        display: flex;
+    }
+    .categoriamob{
+        display: flex;
+    }
+    .categorias{
+        display: none;
+    }
+    .categoria{
+        display: none;
     }
 }
 
