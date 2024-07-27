@@ -235,12 +235,12 @@ section.slider {
         padding: 3%;
     }
     nav li{
-        height: 32px;
+        height: 27px;
         align-items: center;
     }
     
     .logo{
-        height: 80px;
+        height: 65px;
         margin-top: -0dvh;
     }
 
@@ -867,7 +867,7 @@ fieldset {
     }
 }
 
-/* CARRINHO */
+/* CARRINHO 
 
 /* .imagem-produto-indicador {
     display: flex;
@@ -878,14 +878,14 @@ fieldset {
     height: 10vh;
     
     background-color: #04AA6D;
-} */
+} 
 
 
 .carrinho-imagem-produto img {
     width: 60px;
 }
 
-/* ///////////// */
+/* ///////////// 
 
 .pagina-carrinho {
     padding: 20px;
@@ -899,17 +899,17 @@ fieldset {
 }
 
 .carrinho-produto {
-    /* border: 1px solid black; */
+    /* border: 1px solid black; 
     display: flex;
     flex-direction: column;
     width: 50vw;
-    /* background-color: red; */
+    /* background-color: red; 
     height: 65vh;
     margin: 10px;
     border-right: 5px solid rgb(177, 177, 177);
     
 
-    /* padding-left: 1px; */
+    /* padding-left: 1px; 
 }
 
 .carrinho-produtos {
@@ -918,14 +918,14 @@ fieldset {
 }
 
 .carrinhoprodutodesc {
-    /* background-color: #8d7a7a; */
+    /* background-color: #8d7a7a; 
 
     width: 40%;
     height: fit-content;
 }
 
 .produtocarrinho {
-    /* border: 2px solid white; */
+    /* border: 2px solid white; 
     width: 80%;
 
     display: flex;
@@ -935,7 +935,7 @@ fieldset {
 }
 
 .info-produto-carrinho {
-    /* border: 1px solid #181616; */
+    /* border: 1px solid #181616; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -964,7 +964,7 @@ fieldset {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid black; */
+    /* border: 1px solid black; 
 }
 
 .botaoquantidade {
@@ -974,7 +974,7 @@ fieldset {
 .otherinfoproduto {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* background-color: white; */
+    /* background-color: white; 
     text-align: center;
     place-items: center;
 
@@ -984,7 +984,7 @@ fieldset {
 
 .others {
     text-align: center;
-    /* border: 1px solid red; */
+    /* border: 1px solid red; 
 
 }
 
@@ -1014,7 +1014,7 @@ fieldset {
 }
 
 .carrinho-valores {
-    /* background-color: rgb(121, 121, 171); */
+    /* background-color: rgb(121, 121, 171); 
     width: 35vw;
     height: 60vh;
 
@@ -1047,7 +1047,7 @@ fieldset {
     background-color: #DF376A;
     border: none;
     border-radius: 20px;
-    /* padding: 0px 10px 0px 10px; */
+    /* padding: 0px 10px 0px 10px; 
     padding: 5px 20px;
     color: white;
     font-size: 2em;
@@ -1066,10 +1066,10 @@ fieldset {
     width: 18vw;
 
     
-    /* border: 1px solid red; */
+    /* border: 1px solid red; 
 
 }
 
 .carrinho-valor span {
     color: #DF376A;
-}
+} */
